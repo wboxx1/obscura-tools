@@ -135,7 +135,7 @@ function docs(){
     poetry run sphinx-apidoc -o docs\ src\obscura_tools
     poetry run .\docs\make.bat clean
     poetry run .\docs\make.bat html
-    poetry run python $Script:BROWSER_PYSCRIPT(.\docs\_build\html\index.html)
+    poetry run python $Script:BROWSER_PYSCRIPT(".\docs\_build\html\index.html")
 }
 
 <#

@@ -1,5 +1,5 @@
 Welcome to obscura-tools's documentation!
-======================================
+=========================================
 
 .. toctree::
    :maxdepth: 2
