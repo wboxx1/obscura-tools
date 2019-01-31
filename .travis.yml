@@ -28,11 +28,11 @@ before-deploy:
 - poetry config http-basic.mypypi wboxx1 $TRAVIS_PASS
 - poetry build
 
-deploy:
-  provider: script
-  script: poetry publish
-  on:
-    tags: true
-    repo: wboxx1/obscura-tools
-    branch: master
-    python: 3.6
+#deploy:
+#  provider: script
+#  script: poetry publish
+#  on:
+#    tags: true
+#    repo: wboxx1/obscura-tools
+#    branch: master
+#    python: 3.6
