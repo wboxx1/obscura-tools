@@ -4,9 +4,9 @@
 """Tests for `obscura_tools` package."""
 
 import pytest
+import numpy as np
 
-
-from obscura_tools import obscura_tools
+import obscura_tools.radome_obscura as obscura
 
 
 @pytest.fixture
@@ -23,3 +23,8 @@ def test_content(response):
     """Sample pytest test function with the pytest fixture as an argument."""
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
+
+
+def test_obscura_radome():
+    ans = obscura.radome(60, -6, 20, 300)
+    assert len(ans['azimuths']) == 39
